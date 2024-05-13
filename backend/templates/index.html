@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Man</title>
+</head>
+<body>
+    <div id="root"></div>
+    {# Include the hashed filenames dynamically #}
+    {% for file in ['js/main.bc6ce6ae.js', 'js/453.8ab44547.chunk.js'] %}
+        <script src="{{ url_for('static', filename=file) }}"></script>
+    {% endfor %}
+</body>
+</html>
